@@ -6,7 +6,7 @@ You can add, delete, complete, and clear completed tasks. It also shows the tota
 ---
 
 ## 🚀 Live Demo  
-🔗 [Live Demo](https://codebyadib.github.io/todo-app/)
+🔗 [https://codebyadib.github.io/todo-app/](https://codebyadib.github.io/todo-app/)
 
 ---
 
@@ -34,5 +34,6 @@ You can add, delete, complete, and clear completed tasks. It also shows the tota
 
 - 🌐 [Portfolio](#)  
 - 💼 [LinkedIn](https://linkedin.com/in/codebyadib)  
-- 📷 [Facebook](https://facebook.com/codebyadib)  
+- 📷 [Facebook](https://facebook.com/codebyadibdev)  
 - 💻 [GitHub](https://github.com/codebyadib)  
+

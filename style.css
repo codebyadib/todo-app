@@ -1,0 +1,150 @@
+    *{
+        box-sizing: border-box;
+    }
+
+        body {
+            font-family: sans-serif;
+            background: #f0f0f0;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        #todo-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 75%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: transform 0.1s ease, opacity 0.1s ease;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        .clear-btn {
+            background: #6c757d;
+            color: white;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            background: #e3e3e3;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: slideIn 0.3s ease;
+        }
+
+        .completed-item {
+            background: #d4edda;
+            /* No strikethrough */
+        }
+
+        .button-container {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .complete-btn,
+        .delete-btn {
+            border: 1px solid black;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            font-size: 14px;
+        }
+
+        .clear-btn{
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        .task-count {
+            font-size: 13px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-10px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 500px) {
+            #todo-container {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            input[type="text"] {
+                width: 65%;
+            }
+
+            button {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .complete-btn,
+            .delete-btn {
+                width: 20px;
+                height: 20px;
+                font-size: 12px;
+            }
+        }
+    
